@@ -199,6 +199,51 @@ GROUP BY COLOUMN)
 )
 select * from cte;
 
+
+-------------FREQUENCY Distribution------------------
+
+--Guest_Satisfaction
+SELECT guest_satisfaction, count(guest_satisfaction) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC; --most of the obserbation are between 80 to 100
+
+--PERSON_CAPACITY
+SELECT person_capacity, count(person_capacity) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC;
+
+--PRICE
+SELECT price, count(price) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC;
+
+--CLEANLINESS_RATING
+SELECT cleanliness_rating, count(cleanliness_rating) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC;
+
+--BEDROOMS
+SELECT bedrooms, count(bedrooms) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC;
+
+--CITY_CENTER
+SELECT city_center, count(city_center) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC;
+
+ --METRO_DISTANCE
+SELECT metro_distance, count(metro_distance) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC;
+
 -------------------------------------------------------------------------
 
 --lets see city wise total observations
@@ -303,4 +348,3 @@ UNION ALL
 (SELECT 'NORMALISED_RESTRAUNT_INDEX'Feature_1, 'GUEST_SATISFACTION' Feature_2, CORR(NORMALISED_RESTRAUNT_INDEX,GUEST_SATISFACTION) CORR
 FROM AIRBNB))
 SELECT * FROM CTE; --highest correlations are between Cleanliness_rating and  Guest_Satisfaction (0.6921501012)
-
