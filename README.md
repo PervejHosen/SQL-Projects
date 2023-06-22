@@ -40,6 +40,7 @@ Check if there is any outlier in the "PRICE" Field; If so, then report the obser
 Apart from the descriptive analysis, try to Explore which Fields/Variables have a Causal Relationship with "Guest Satisfaction".
 
 Build a Simple Dashboard using Snowflake [Keep one or two filters on top; whatever field you find most important ones to look at]
+Write a Short Report based on your findings [Report should be written in Microsoft Word File and the Analyses, Charts should be included in the report; Add a Screenshot of your dashboard as well]
 
 ###############Findings##############
 
@@ -49,4 +50,4 @@ Build a Simple Dashboard using Snowflake [Keep one or two filters on top; whatev
 
 
 
-Write a Short Report based on your findings [Report should be written in Microsoft Word File and the Analyses, Charts should be included in the report; Add a Screenshot of your dashboard as well]
+
