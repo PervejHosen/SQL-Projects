@@ -42,7 +42,7 @@ Apart from the descriptive analysis, try to Explore which Fields/Variables have 
 Build a Simple Dashboard using Snowflake [Keep one or two filters on top; whatever field you find most important ones to look at]
 Write a Short Report based on your findings [Report should be written in Microsoft Word File and the Analyses, Charts should be included in the report; Add a Screenshot of your dashboard as well]
 
-###############Findings##############
+######################### Findings #########################
 
 ![Total Observation By City](https://github.com/PervejHosen/SQL-Projects/assets/117522848/cb7ab295-c973-4cdd-a907-ad5147655670)
 
