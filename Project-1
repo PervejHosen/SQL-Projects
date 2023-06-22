@@ -51,8 +51,7 @@ FROM AIRBNB; --20 to 100 scale. 51 uniqe category
 SELECT DISTINCT bedrooms
 FROM AIRBNB; --0,1,2,3,4,5,9,10
 
---Lets see min/max/avg of some variables/features.
-
+--Lets see static of variables/features
 
 with cte as(
 (SELECT
@@ -199,13 +198,26 @@ FROM airbnb
 GROUP BY COLOUMN)
 )
 select * from cte;
+
 -------------------------------------------------------------------------
+
+--lets see city wise total observations
 
 select city,
     count(city) as total_observation
 from airbnb
 group by 1
 order by 2 DESC; --ROME HAS THE HIGHEST OBSERBATION(9004), AMSTERDAM HAS LEAST (1875)
+
+--Lets see city wise min,max,avg of price
+
+select city,
+round(min(price),0) as minimum_house_price, --35
+round(max(price),0) as maximum_house_price, --999
+round(avg(price),0) as avrrage_house_price  --243
+from airbnb
+group by 1
+order by 2 desc;
 
 ---FIVE NUMBER SUMMARY AND INTER-QUARTILE RANGES (IQR)
 
