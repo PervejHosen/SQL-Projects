@@ -44,7 +44,8 @@ Write a Short Report based on your findings [Report should be written in Microso
 
 ######################### Findings #########################
 
-![Screenshot (21)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/d589cae0-6fe7-46cc-a003-93768114cbf2)
+![Screenshot (26)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/64afc2fc-6a4d-40c9-bf13-4870486cdb1c)
+
 
 ![Frequency Distribution of Guest Satisfaction (1)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/d5f3ad19-1e63-42af-9df4-fea2523ee92e)
 
