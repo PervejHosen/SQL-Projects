@@ -49,6 +49,7 @@ Write a Short Report based on your findings [Report should be written in Microso
 
 ![Number Of Outliers In Price Field](https://github.com/PervejHosen/SQL-Projects/assets/117522848/3a6559a5-b2e6-4e2a-aedc-b96c1c0599a6)
 
+![Screenshot (32)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/b3fe9394-6173-42d0-bb99-76bd8cf8d5c3)
 
 
 ![Frequency Distribution of Guest Satisfaction (1)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/d5f3ad19-1e63-42af-9df4-fea2523ee92e)
