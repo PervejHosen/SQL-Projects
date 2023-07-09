@@ -1,5 +1,4 @@
-drop database tourism;
----Creating Database,Schema,Table,File Format and Inserting the dataset---
+---\ Creating Database,Schema,Table,File Format and Inserting the dataset /---
 CREATE OR replace DATABASE TOURISM;
 USE DATABASE TOURISM;
 
@@ -29,7 +28,7 @@ CREATE OR replace TABLE AIRBNB(
     );
 
 
---- CREATE BULK INSERT CSV FORMAT
+---\ CREATE BULK INSERT CSV FORMAT /---
 ---field optionally enclosed for double quatation in the records ""
 create or replace file format csv_format
     type = 'csv' 
@@ -45,6 +44,7 @@ create or replace file format csv_format
 
 ---SNIPPET/SNAPSHOT OF THE DATASET
 select * from airbnb limit 5;
+
 
 ---NUMBER OF RECORDS IN THE DATASET
 select count(*) from airbnb;--41,714 obserbation
@@ -87,13 +87,15 @@ FROM AIRBNB; --20 to 100 scale. 51 uniqe category
 SELECT DISTINCT bedrooms
 FROM AIRBNB; --0,1,2,3,4,5,9,10
 
---NUMBER OF BOOKINGS IN EACH CITY
+
+---NUMBER OF BOOKINGS IN EACH CITY
 SELECT 
     CITY, 
     COUNT(CITY) AS "NUMBER OF BOOKINGS"
 FROM AIRBNB
 GROUP BY CITY
 ORDER BY 2 DESC; --ROME HAS THE HIGHEST OBSERBATION(9,027), AMSTERDAM HAS LEAST (2,080)
+
 
 ---Total Booking Revenue by City
 SELECT CITY, 
@@ -102,12 +104,14 @@ SELECT CITY,
     GROUP BY CITY
     ORDER BY 2 DESC;--Paris HAS THE HIGHEST Booking Revenue(2,625,250), Berlin HAS LEAST (607,546)
 
+
 ---Combining the two result
 SELECT CITY, COUNT(CITY) AS "NUMBER OF BOOKINGS", 
     ROUND(SUM(PRICE),0) AS "TOTAL BOOKING REVENUE"
     FROM AIRBNB
     GROUP BY CITY
     ORDER BY "TOTAL BOOKING REVENUE" DESC;
+
 
 ---TRYING TO MAKE A CAUSAL RELATIONSHIP
 SELECT 
@@ -120,6 +124,7 @@ FROM AIRBNB
 GROUP BY CITY
 ORDER BY 4 DESC;
 
+
 ---Lets see city wise min,max,avg of price
 select city,
 round(min(price),0) as minimum_house_price,
@@ -129,7 +134,8 @@ from airbnb
 group by 1
 order by 2 desc;
 
-------Lets see Some Summary static of variables/features--------
+
+------\ Lets see Some Summary static of variables/features /--------
 
 WITH CTE AS(
 (SELECT
@@ -276,60 +282,6 @@ FROM airbnb
 GROUP BY Metrix)
 )
 SELECT * FROM CTE;
-
-
--------------FREQUENCY Distribution------------------
-SELECT guest_satisfaction,
-    CASE
-        WHEN round((guest_satisfaction),0)=20 and 30 and 40 and 44 and 47 and 50 THEN '20-50'
-        WHEN round((guest_satisfaction),0)=53 and 54 and 55 and 56 and 57 and 60 and 62 and 63 and 64 and 65 and 66         and 67 and 68 and 69 and 70 and 71 and 72 and 73 and 74 and 75 and 76 and 77 and 78 and 79 and 80 THEN '50-80'
-        WHEN round((guest_satisfaction),0)=81 and 82 and 83 and 84 and 85 and 86 and 87 and 88 and 89 and 90 and 91 and 92 and 93 and 94 and 95 and 96 and 97 and 98 and 99 and 100 THEN '80-100'
-    END AS result
-FROM airbnb;
-
-select distinct guest_satisfaction from airbnb;
-
---Guest_Satisfaction
-SELECT guest_satisfaction, count(guest_satisfaction) AS Frequency
-FROM airbnb
-GROUP BY 1
-ORDER BY 2 DESC; --most of the obserbation are between 80 to 100
-
---PERSON_CAPACITY
-SELECT person_capacity, count(person_capacity) AS Frequency
-FROM airbnb
-GROUP BY 1
-ORDER BY 2 DESC;
-
---PRICE
-SELECT price, count(price) AS Frequency
-FROM airbnb
-GROUP BY 1
-ORDER BY 2 DESC;
-
---CLEANLINESS_RATING
-SELECT cleanliness_rating, count(cleanliness_rating) AS Frequency
-FROM airbnb
-GROUP BY 1
-ORDER BY 2 DESC;
-
---BEDROOMS
-SELECT bedrooms, count(bedrooms) AS Frequency
-FROM airbnb
-GROUP BY 1
-ORDER BY 2 DESC;
-
---CITY_CENTER
-SELECT city_center, count(city_center) AS Frequency
-FROM airbnb
-GROUP BY 1
-ORDER BY 2 DESC;
-
- --METRO_DISTANCE
-SELECT metro_distance, count(metro_distance) AS Frequency
-FROM airbnb
-GROUP BY 1
-ORDER BY 2 DESC;
 
 
 ---\ FIVE NUMBER SUMMARY AND INTER-QUARTILE RANGES (IQR) /---
@@ -832,3 +784,57 @@ UNION ALL
 FROM AIRBNB))
 
 SELECT * FROM CTE; --highest correlations are between Cleanliness_rating and  Guest_Satisfaction DOES HAVE A MODERATE TO STRONG POSITIVE ASSOCIATION (0.6921501012)
+
+
+-------------\ FREQUENCY Distribution /------------------
+SELECT guest_satisfaction,
+    CASE
+        WHEN round((guest_satisfaction),0)=20 and 30 and 40 and 44 and 47 and 50 THEN '20-50'
+        WHEN round((guest_satisfaction),0)=53 and 54 and 55 and 56 and 57 and 60 and 62 and 63 and 64 and 65 and 66         and 67 and 68 and 69 and 70 and 71 and 72 and 73 and 74 and 75 and 76 and 77 and 78 and 79 and 80 THEN '50-80'
+        WHEN round((guest_satisfaction),0)=81 and 82 and 83 and 84 and 85 and 86 and 87 and 88 and 89 and 90 and 91 and 92 and 93 and 94 and 95 and 96 and 97 and 98 and 99 and 100 THEN '80-100'
+    END AS result
+FROM airbnb;
+
+select distinct guest_satisfaction from airbnb;
+
+--Guest_Satisfaction
+SELECT guest_satisfaction, count(guest_satisfaction) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC; --most of the obserbation are between 80 to 100
+
+--PERSON_CAPACITY
+SELECT person_capacity, count(person_capacity) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC;
+
+--PRICE
+SELECT price, count(price) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC;
+
+--CLEANLINESS_RATING
+SELECT cleanliness_rating, count(cleanliness_rating) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC;
+
+--BEDROOMS
+SELECT bedrooms, count(bedrooms) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC;
+
+--CITY_CENTER
+SELECT city_center, count(city_center) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC;
+
+ --METRO_DISTANCE
+SELECT metro_distance, count(metro_distance) AS Frequency
+FROM airbnb
+GROUP BY 1
+ORDER BY 2 DESC;
