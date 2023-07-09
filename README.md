@@ -43,6 +43,9 @@ Build a Simple Dashboard using Snowflake [Keep one or two filters on top; whatev
 Write a Short Report based on your findings [Report should be written in Microsoft Word File and the Analyses, Charts should be included in the report; Add a Screenshot of your dashboard as well]
 
 ######################### Findings #########################
+![Screenshot (30)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/7adab94b-f7a8-4168-9598-d15c940d19f3)
+
+
 ![Total Booking By City](https://github.com/PervejHosen/SQL-Projects/assets/117522848/9ab9ca80-bfbc-4c4b-89eb-05f29fd0191c)
 
 ![Total Booking Revenue By City ](https://github.com/PervejHosen/SQL-Projects/assets/117522848/4933b39d-dc54-4cc5-b3ee-d39fc1626435)
