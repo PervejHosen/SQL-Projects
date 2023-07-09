@@ -47,8 +47,8 @@ Write a Short Report based on your findings [Report should be written in Microso
 
 ![Total Booking Revenue By City ](https://github.com/PervejHosen/SQL-Projects/assets/117522848/4933b39d-dc54-4cc5-b3ee-d39fc1626435)
 
+![Screenshot (29)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/f2c96361-6318-4aca-81f4-a9adcf93b05e)
 
-![Screenshot (28)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/0a2f8788-5542-4632-a935-114b2403b50a)
 
 
 
