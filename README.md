@@ -53,6 +53,7 @@ Write a Short Report based on your findings [Report should be written in Microso
 
 ![Screenshot (32)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/b3fe9394-6173-42d0-bb99-76bd8cf8d5c3)
 ![Screenshot (35)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/5c414aed-d1b9-47f2-af48-6ede3cb0b7c2)
+![Screenshot (36)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/290baf4e-fa50-455b-96e5-6b678dae1ad8)
 
 
 
