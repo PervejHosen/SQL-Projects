@@ -56,22 +56,10 @@ Write a Short Report based on your findings [Report should be written in Microso
 ![Screenshot (36)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/290baf4e-fa50-455b-96e5-6b678dae1ad8)
 ![Screenshot (37)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/2888c7af-1209-4b56-b5b1-818881811e72)
 ![Screenshot (38)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/1d6c7ccb-1baf-4ef2-9574-b6a4a34763b9)
+![Screenshot (39)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/fd51c014-cebb-4d89-92f9-17534ef8fdaa)
 
 
 
-![Frequency Distribution of Guest Satisfaction (1)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/d5f3ad19-1e63-42af-9df4-fea2523ee92e)
-
-![Frequency Distribution of Person Capacity](https://github.com/PervejHosen/SQL-Projects/assets/117522848/3b506a37-8080-477a-ba66-d94013393ae3)
-
-![Scatter Plot of Price Variables](https://github.com/PervejHosen/SQL-Projects/assets/117522848/420a4c70-9f71-4573-b695-e775e975939d)
-
-![Frequency Distribution of Cleanliness Rationg](https://github.com/PervejHosen/SQL-Projects/assets/117522848/86acbe4f-9a64-4632-907d-a38190379dc3)
-
-![Frequency Distribution of Bedrooms](https://github.com/PervejHosen/SQL-Projects/assets/117522848/c6842efe-a19d-431b-a195-9fb6f2fd55f9)
-
-![Frequency Distribution of City Center](https://github.com/PervejHosen/SQL-Projects/assets/117522848/a8283acb-a9af-4d88-984c-f17d29e6d3b6)
-
-![Frequency Distribution of Metro Distance (1)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/1b4c53cb-93bf-452b-a9f1-19cbd2f4565f)
 
 
 ![Total Observation By City](https://github.com/PervejHosen/SQL-Projects/assets/117522848/cb7ab295-c973-4cdd-a907-ad5147655670)
