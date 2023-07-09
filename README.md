@@ -61,12 +61,3 @@ Write a Short Report based on your findings [Report should be written in Microso
 
 
 
-
-![Total Observation By City](https://github.com/PervejHosen/SQL-Projects/assets/117522848/cb7ab295-c973-4cdd-a907-ad5147655670)
-
-![City Wise Min, Max and Avg Of Price (1)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/6f53b0a9-5883-4ab5-8c40-e321dd371ded)
-
-![Screenshot (22)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/734b3147-1d7d-4e35-bd7e-4627338ddd8d)
-
-
-
