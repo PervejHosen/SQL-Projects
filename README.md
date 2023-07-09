@@ -47,7 +47,8 @@ Write a Short Report based on your findings [Report should be written in Microso
 
 ![Screenshot (29)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/f2c96361-6318-4aca-81f4-a9adcf93b05e)
 
-![Number Of Outliers In Price Field](https://github.com/PervejHosen/SQL-Projects/assets/117522848/3a6559a5-b2e6-4e2a-aedc-b96c1c0599a6)
+![Screenshot (33)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/e29fe6d7-14ce-4638-a90d-133de3e80a1d)
+
 
 ![Screenshot (32)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/b3fe9394-6173-42d0-bb99-76bd8cf8d5c3)
 
