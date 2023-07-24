@@ -1,10 +1,12 @@
-#### Description of the Dataset:
+# Project: SQL-Snowflake
+## Airbnb Data Analysis Using SQL-Snowflake
+### Description of the Dataset:
 Airbnb, Inc. is an American San Francisco-based company operating an online marketplace for short- and long-term homestays and experiences. The company acts as a broker and charges a commission from each booking.
 You will be working with their European Booking Dataset. This is a merged dataset of 9 famous cities in Europe:
 Amsterdam, Athens, Barcelona, Berlin, Budapest, Lisbon, Paris, Rome, and Vienna.
 The original Dataset was messy and lacked describing appropriate information. But, this one was first cleaned. 
 
-##### Variables Names and Descriptions are:
+#### Variables Names and Descriptions are:
 * City: Name of the City
 * Price: Price of Airbnb
 * Day: If it is a weekday or weekend
@@ -41,7 +43,7 @@ The original Dataset was messy and lacked describing appropriate information. Bu
 12. Build a Simple Dashboard using Snowflake [Keep one or two filters on top; whatever field you find most important ones to look at]
 13. Write a Short Report based on your findings [Report should be written in Microsoft Word File and the Analyses, Charts should be included in the report; Add a Screenshot of your dashboard as well]
 
-#### Findings:
+## Findings:
 ![Screenshot (30)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/7adab94b-f7a8-4168-9598-d15c940d19f3)
 
 ![Screenshot (29)](https://github.com/PervejHosen/SQL-Projects/assets/117522848/f2c96361-6318-4aca-81f4-a9adcf93b05e)
